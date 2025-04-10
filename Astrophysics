@@ -1,0 +1,55 @@
+Objective:
+Build a planetary position prediction system that calculates, visualizes, and simulates the movement of celestial bodies based on orbital mechanics. The tool should be able to predict past and future planetary positions accurately and provide an interactive UI for users.
+
+Instructions for AI:
+Planetary Position Calculation:
+
+Use Keplerian elements and orbital mechanics equations to compute the positions of planets in the solar system.
+
+Implement VSOP87 model or NASA JPL SPICE toolkit for high-precision calculations.
+
+Allow users to input a specific date and time (past, present, or future) and return the planetary positions (RA/DEC, Alt/Az, Ecliptic coordinates).
+
+Visualization & Simulation:
+
+Create a 2D or 3D solar system model to display planetary positions interactively.
+
+Allow users to fast-forward or rewind time to observe planetary movements.
+
+Implement orbital trails to show the motion of planets over time.
+
+Use Three.js for web visualization or Matplotlib/Plotly for static charts.
+
+User Interface (UI) & Interaction:
+
+Develop a web-based UI using React.js (for frontend) and Flask/FastAPI (for backend calculations).
+
+Users should be able to select a planet and view its position in different celestial coordinate systems.
+
+Include an option to generate ephemeris tables for planetary motion over a given period.
+
+Integration with Real-World Data:
+
+Fetch real-time planetary positions from NASA JPL Horizons API for validation.
+
+Allow users to compare predicted vs. actual planetary positions for accuracy analysis.
+
+Provide export options (CSV, JSON, or API endpoints) for researchers.
+
+Technical Requirements:
+
+Backend: Python (Astropy, Skyfield, SPICE Toolkit)
+
+Frontend: React.js / Three.js for visualization
+
+Database (Optional): PostgreSQL / SQLite for caching planetary data
+
+APIs/Data Sources: NASA JPL Horizons, ESA Sky Mapper
+
+Additional Features (Optional):
+
+Implement AI-based trend analysis on planetary motion.
+
+Provide sky-mapping functionality (users enter location → get visible planets in the night sky).
+
+Develop an API for external applications to fetch planetary positions programmatically.
